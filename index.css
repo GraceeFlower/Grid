@@ -10,7 +10,6 @@ body {
   width: 500px;
   height: 400px;
   grid-template-rows: 100px 100px 100px;
-  margin-bottom: 50px;
 }
 
 .item {
@@ -82,7 +81,13 @@ body {
   gap: 10px 20px;
 } 
 
+.container-six .item-one {
+  grid-area: MyArea;
+  /* 必须命名了才有效 */
+}
 
-
-
+.container-six {
+  grid-template-columns: repeat(5, 100px);
+  grid-template-areas: "MyArea MyArea MyArea ..";
+}
 
