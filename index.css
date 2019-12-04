@@ -2,13 +2,14 @@ body {
   margin: 0;
   padding: 0 100px;
   color: #fff;
-  background-color: #C2C4B6;
+  background-color: rgb(110, 110, 106);
 }
 
 .container {
   display: grid;
   grid-template-rows: 100px 100px 100px;
   grid-template-columns: repeat(3, 100px);
+  margin-bottom: 100px;
 }
 
 .item {
@@ -52,6 +53,11 @@ body {
 
 .item-nine {
   background-color: #A5678E;
+}
+
+.container-two {
+  /* display: inline-grid; */
+  grid-template-columns: repeat(auto-fill, 100px);
 }
 
 
