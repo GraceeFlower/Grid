@@ -114,3 +114,20 @@ body {
                        ". . footer . .";
 }
 
+.container-seven {
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-flow: column dense;
+}
+
+.container-seven .item-one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.container-seven .item-two {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+
