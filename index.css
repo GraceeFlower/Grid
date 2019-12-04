@@ -7,9 +7,10 @@ body {
 
 .container {
   display: grid;
+  width: 500px;
+  height: 300px;
   grid-template-rows: 100px 100px 100px;
-  grid-template-columns: repeat(3, 100px);
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .item {
@@ -55,10 +56,20 @@ body {
   background-color: #A5678E;
 }
 
+.container-one {
+  grid-template-columns: repeat(3, 100px);
+}
+
 .container-two {
   /* display: inline-grid; */
   grid-template-columns: repeat(auto-fill, 100px);
 }
+
+.container-three {
+  /* grid-template-columns: 100px 1fr 2fr; */
+  grid-template-columns: 100px 1fr minmax(100px, 2fr);
+}
+
 
 
 
