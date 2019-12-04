@@ -5,6 +5,12 @@ body {
   background-color: rgb(110, 110, 106);
 }
 
+.container-main {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  
+}
+
 .container {
   display: grid;
   width: 500px;
