@@ -81,13 +81,36 @@ body {
   gap: 10px 20px;
 } 
 
-.container-six .item-one {
-  grid-area: MyArea;
-  /* 必须命名了才有效 */
+.container-six .header {
+  grid-area: header;
 }
+
+.container-six .footer {
+  grid-area: footer;
+}
+
+.container-six .content {
+  grid-area: content;
+  /* 容器：必须命名了 grid-template-areas 才有效*/
+  /* 项目：否则就用下面这种方式 */
+}
+
+/* .container-six .content {
+  grid-area: 2/1/3/5;
+} */
+
+/* .container-six .header {
+  grid-area: 1/1/1/6;
+} */
+
+/* .container-six .footer {
+  grid-area: 3/5/3/6;
+} */
 
 .container-six {
   grid-template-columns: repeat(5, 100px);
-  grid-template-areas: "MyArea MyArea MyArea ..";
+  grid-template-areas: ". header header header ."
+                       "content content content content content"
+                       ". . footer . .";
 }
 
